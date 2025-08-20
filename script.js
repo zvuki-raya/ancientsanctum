@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function resetMusic() {
-        const defaultTrack = './assets/NAWADAMENU.mp3';
+        const defaultTrack = './assets/main_menu.mp3';
         if (audioPlayer.src !== defaultTrack) {
             audioPlayer.src = defaultTrack;
             audioPlayer.play();
@@ -100,3 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
