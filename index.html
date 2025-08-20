@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#f4b6e5" data-react-helmet="true">
+    <title>[IV] Within Reach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay" class="overlay" onclick="removeOverlay();">
+        <p class="glitch" style="margin-top: 5px;">Click To Enter</p>
+    </div>
+
+    <audio id="audio-player" src="./assets/main_menu.mp3" loop style="display: none;"></audio>
+
+<div class="blink" style="margin-bottom: -16px;">
+    <pre class="ascii-logo" style="letter-spacing: 0; word-spacing: 0; font-family: monospace; font-size: 14px; line-height: 1;">
+▄▄▄       ███▄    █  ▄████▄   ██▓▓█████  ███▄    █ ▄▄▄█████▓  ██████   ▄▄▄       ███▄    █  ▄████▄   ▄▄▄█████▓ █    ██  ███▄ ▄███▓
+▒████▄     ██ ▀█   █ ▒██▀ ▀█  ▓██▒▓█   ▀  ██ ▀█   █ ▓  ██▒ ▓▒▒██    ▒  ▒████▄     ██ ▀█   █ ▒██▀ ▀█  ▓  ██▒ ▓▒ ██  ▓██▒▓██▒▀█▀ ██▒
+▒██  ▀█▄  ▓██  ▀█ ██▒▒▓█    ▄ ▒██▒▒███   ▓██  ▀█ ██▒▒ ▓██░ ▒░░ ▓██▄    ▒██  ▀█▄  ▓██  ▀█ ██▒▒▓█    ▄ ▒ ▓██░ ▒░▓██  ▒██░▓██    ▓██░
+░██▄▄▄▄██ ▓██▒  ▐▌██▒▒▓▓▄ ▄██▒░██░▒▓█  ▄ ▓██▒  ▐▌██▒░ ▓██▓ ░   ▒   ██▒ ░██▄▄▄▄██ ▓██▒  ▐▌██▒▒▓▓▄ ▄██▒░ ▓██▓ ░ ▓▓█  ░██░▒██    ▒██ 
+ ▓█   ▓██▒▒██░   ▓██░▒ ▓███▀ ░░██░░▒████▒▒██░   ▓██░  ▒██▒ ░ ▒██████▒▒  ▓█   ▓██▒▒██░   ▓██░▒ ▓███▀ ░  ▒██▒ ░ ▒▒█████▓ ▒██▒   ░██▒
+ ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░ ░▒ ▒  ░░▓  ░░ ▒░ ░░ ▒░   ▒ ▒   ▒ ░░   ▒ ▒▓▒ ▒ ░  ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░ ░▒ ▒  ░  ▒ ░░   ░▒▓▒ ▒ ▒ ░ ▒░   ░  ░
+  ▒   ▒▒ ░░ ░░   ░ ▒░  ░  ▒    ▒ ░ ░ ░  ░░ ░░   ░ ▒░    ░    ░ ░▒  ░ ░   ▒   ▒▒ ░░ ░░   ░ ▒░  ░  ▒       ░    ░░▒░ ░ ░ ░  ░      ░
+  ░   ▒      ░   ░ ░ ░         ▒ ░   ░      ░   ░ ░   ░      ░  ░  ░     ░   ▒      ░   ░ ░ ░          ░       ░░░ ░ ░ ░      ░   
+      ░  ░         ░ ░ ░       ░     ░  ░         ░                ░         ░  ░         ░ ░ ░                  ░            ░   
+                     ░                                                                     ░                                      
+    </pre>
+</div>
+
+
+    <div id="content">
+        <span>
+            <p class="pale-red">
+                0----
+                <span class="red">
+                    <span class="red flicker-text2">XXX</span>
+                </span>
+                <span class="pale-red">-------------------------- <span class="red flicker-text1">I</span><span class="flicker-text1"><span class="red">V</span></span> ------------------------------------</span>
+            </p>
+        </span>
+        <div id="text">
+            <p>
+                <span class="yellow">::</span>
+                The ANCIENT <span class="blink2">SANCTUM</span> is a boundary region that lies within reach of the Great Rift but not touched by it.
+                <br>
+                <span class="yellow">::</span>
+                Fall behind, and the darkness will claim you.
+                <span class="blink2">Good luck.</span>
+            </p>
+        </div>
+        <span>
+            <p class="pale-red">
+                0----
+                <span class="red">
+                    <span class="flicker-text">XXX</span>
+                </span>
+                <span class="pale-red">------------------------ <span class="red">M<span class="brightred">e</span>m<span class="flicker-text">b</span><span class="flicker-text1">ers</span></span> ---------------------------------</span>
+            </p>
+        </span>
+        <div id="text">
+            <p>
+                <span class="yellow" id="Lte-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('paris')">paris</a> *
+                <span class="purple">[<a href="https://discord.com/channels/@me/1401949632799445073">.gg/cardanparis</a>]</span>
+                ::
+                <span class="purple">[<a href="https://t.me/g0thicadeath">t.me/@g0thicadeath</a>]</span>
+            </p>
+        </div>
+        <div id="text">
+            <p>
+                <span class="yellow" id="Lte-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('aqero')">aqero</a> *
+                <span class="purple">[<a href="https://discord.com/channels/@me/1387372586538766346">.gg/aqe.ro</a>]</span>
+                ::
+                <span class="purple">[<a href="https://t.me/lifeisfailed">t.me/@lifeisfailed</a>]</span>
+            </p>
+        </div>
+        <div id="member-info" style="text-align: center; margin-top: 35px;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
