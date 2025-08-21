@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'name': 'AQERO', 
             'image': './assets/CEO.jpg', 
             'description': 'does anyone know my <u style="color: red;">wishes?</u>', 
-            'track': './assets/21savage.mp3' 
+            'track': './assets/aqero.mp3' 
         },
     };    
 
@@ -100,4 +100,5 @@ document.addEventListener('DOMContentLoaded', function() {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
 
